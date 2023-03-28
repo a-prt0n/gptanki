@@ -13,8 +13,8 @@ class ChatGPTAddon(QWidget):
             self.api_key = api_key
             return api_key
         else:
+            self.api_key = None
             return None
-
 
     def submit(self):
         api_key = self.api_key
